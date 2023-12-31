@@ -25,7 +25,7 @@ list_of_files=[
 
 for filepath in list_of_files:
     filepath = Path(filepath)                          #we can handle path with this command
-    filedir,filename = os.path.split(filepath)         #this return file directory and file in form of tuplr-->>()
+    filedir,filename = os.path.split(filepath)         #this return file directory and file in form of tuple-->>()
 
     if filedir !="":
         os.makedirs(filedir, exist_ok=True)
